@@ -1,0 +1,235 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Projects | Ishatva Gupta{% endblock %}
+
+{% block meta_description %}
+Explore Ishatva Gupta's projects, including QuickBite, GymLytics, and the Django Tweet application.
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/pages/projects.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="projects-page">
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <span class="section-label">
+            <span class="label-dot"></span>
+            THINGS I'VE BUILT
+        </span>
+
+        <h1>
+            My Selected
+            <span>Projects.</span>
+        </h1>
+
+        <p>
+            Turning ideas into practical applications through backend
+            development, web technologies, and computer vision.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-content">
+
+        <div class="projects-heading">
+            <div>
+                <span class="section-label">MY WORK</span>
+                <h2>Built with <span>purpose.</span></h2>
+            </div>
+
+            <p>
+                A closer look at the applications and technical
+                challenges I've explored.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: QuickBite -->
+            <article class="project-card">
+
+                <div class="project-visual quickbite-visual">
+                    <span class="project-index">PROJECT / 01</span>
+
+                    <div class="project-visual-icon">QB</div>
+
+                    <span class="visual-caption">
+                        Restaurant Management
+                    </span>
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-category">
+                        WEB DEVELOPMENT
+                    </div>
+
+                    <h3>QuickBite</h3>
+
+                    <p>
+                        A restaurant management and food-ordering
+                        application featuring menu browsing, cart
+                        management, user authentication, checkout,
+                        and order tracking.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>SQLite</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a
+                            class="project-link"
+                            href="https://github.com/Ishatva04/QuickBite"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View QuickBite source code on GitHub"
+                        >
+                            View Source Code
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Project 2: GymLytics -->
+            <article class="project-card">
+
+                <div class="project-visual gymlytics-visual">
+                    <span class="project-index">PROJECT / 02</span>
+
+                    <div class="project-visual-icon">GL</div>
+
+                    <span class="visual-caption">
+                        AI &amp; Computer Vision
+                    </span>
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-category">
+                        COMPUTER VISION
+                    </div>
+
+                    <h3>GymLytics</h3>
+
+                    <p>
+                        An exercise posture-analysis system using
+                        YOLOv8 classification and MediaPipe Pose
+                        to analyze movements and exercise form.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>YOLOv8</span>
+                        <span>MediaPipe</span>
+                        <span>OpenCV</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a
+                            class="project-link"
+                            href="https://github.com/Ishatva04/Exercise-Posture-Correction-System"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View GymLytics source code on GitHub"
+                        >
+                            View Source Code
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Project 3: Django Tweet -->
+            <article class="project-card">
+
+                <div class="project-visual tweet-visual">
+                    <span class="project-index">PROJECT / 03</span>
+
+                    <div class="project-visual-icon">DT</div>
+
+                    <span class="visual-caption">
+                        Social Web Application
+                    </span>
+                </div>
+
+                <div class="project-details">
+
+                    <div class="project-category">
+                        WEB DEVELOPMENT
+                    </div>
+
+                    <h3>Django Tweet</h3>
+
+                    <p>
+                        A social posting application built with Django.
+                        Its interface and backend demonstrate how
+                        views, templates, and data models work together.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a
+                            class="project-link"
+                            href="https://github.com/Ishatva04/Tweet"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Django Tweet source code on GitHub"
+                        >
+                            View Source Code
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact Call to Action -->
+    <section class="projects-cta">
+
+        <span class="section-label">
+            HAVE AN IDEA?
+        </span>
+
+        <h2>
+            Let's build something
+            <span>meaningful.</span>
+        </h2>
+
+        <p>
+            Interested in my work or have an opportunity to discuss?
+            Feel free to get in touch.
+        </p>
+
+        <a
+            href="{% url 'contact' %}"
+            class="projects-cta-link"
+        >
+            Let's Connect
+            <span>↗</span>
+        </a>
+
+    </section>
+
+</div>
+{% endblock %}

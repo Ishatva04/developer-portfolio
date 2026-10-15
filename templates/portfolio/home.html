@@ -1,0 +1,385 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Ishatva Gupta | Python & Django Developer{% endblock %}
+
+{% block meta_description %}
+Ishatva Gupta's developer portfolio featuring Python, Django, backend development, QuickBite, GymLytics, and Django Tweet.
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/pages/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="home-page">
+
+    <!-- Background decoration -->
+    <div class="home-glow home-glow-one" aria-hidden="true"></div>
+    <div class="home-glow home-glow-two" aria-hidden="true"></div>
+
+    <!-- Hero -->
+    <section class="home-hero section-container">
+
+        <div class="home-hero-content">
+
+            <div class="home-eyebrow">
+                <span class="home-status-dot"></span>
+                PYTHON &amp; DJANGO DEVELOPER
+            </div>
+
+            
+
+
+<h1 class="home-title">
+    I build
+    <span class="home-gradient-text">useful things</span>
+    <span class="home-title-ending">for the web.</span>
+</h1>
+
+
+
+
+            <p class="home-description">
+                Hi, I'm Ishatva Gupta. I enjoy turning ideas into
+                practical applications through Python, Django,
+                backend development, and thoughtful problem-solving.
+            </p>
+
+            <div class="home-actions">
+                <a href="{% url 'projects' %}" class="home-button home-button-primary">
+                    Explore my work
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="{% url 'contact' %}" class="home-button home-button-secondary">
+                    Let's connect
+                </a>
+            </div>
+
+            <div class="home-tech-stack">
+                <span class="home-stack-label">WORKING WITH</span>
+
+                <div class="home-stack-items">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>SQL</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Code-inspired visual -->
+        <div class="home-visual">
+
+            <div class="home-code-card">
+
+                <div class="home-code-header">
+                    <div class="home-window-dots" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="home-code-filename">developer.py</span>
+                    <span class="home-code-language">PY</span>
+                </div>
+
+                <div class="home-code-body" aria-label="Illustrative Python code">
+                    <div class="home-code-line">
+                        <span class="home-line-number">01</span>
+                        <code><span class="code-purple">class</span> <span class="code-blue">Developer</span>:</code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">02</span>
+                        <code>&nbsp;&nbsp;<span class="code-purple">def</span> <span class="code-yellow">__init__</span>(self):</code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">03</span>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;self.focus = <span class="code-green">"Backend"</span></code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">04</span>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;self.stack = [</code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">05</span>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Python"</span>,</code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">06</span>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Django"</span></code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">07</span>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;]</code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">08</span>
+                        <code>&nbsp;&nbsp;<span class="code-purple">def</span> <span class="code-yellow">build</span>(self):</code>
+                    </div>
+
+                    <div class="home-code-line">
+                        <span class="home-line-number">09</span>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-purple">return</span> <span class="code-green">"Useful software"</span></code>
+                    </div>
+
+                    <div class="home-code-cursor" aria-hidden="true"></div>
+                </div>
+
+                <div class="home-code-footer">
+                    <span><span class="home-footer-dot"></span> Always learning</span>
+                    <span>UTF-8</span>
+                </div>
+
+            </div>
+
+            <div class="home-floating-card home-floating-project">
+                <span class="floating-icon floating-icon-purple" aria-hidden="true">⌘</span>
+                <div>
+                    <span class="floating-label">FEATURED PROJECT</span>
+                    <strong>QuickBite</strong>
+                    <span class="floating-description">Restaurant management app</span>
+                </div>
+                <span class="floating-arrow" aria-hidden="true">↗</span>
+            </div>
+
+            <div class="home-floating-card home-floating-stack">
+                <span class="floating-icon floating-icon-blue" aria-hidden="true">{ }</span>
+                <div>
+                    <span class="floating-label">CORE TECHNOLOGY</span>
+                    <strong>Python + Django</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Introductory divider -->
+    <div class="home-divider section-container">
+        <span></span>
+        <span class="home-divider-text">A LITTLE OF WHAT I DO</span>
+        <span></span>
+    </div>
+
+    <!-- Focus areas -->
+    <section class="home-focus section-container">
+
+        <div class="home-section-heading">
+            <div>
+                <span class="home-eyebrow">MY APPROACH</span>
+                <h2>
+                    Curious by nature.
+                    <span class="home-gradient-text">Practical by design.</span>
+                </h2>
+            </div>
+
+            <p>
+                I learn by building, experimenting, and understanding
+                how things work behind the scenes.
+            </p>
+        </div>
+
+        <div class="home-focus-grid">
+
+            <article class="home-focus-card">
+                <div class="home-focus-card-top">
+                    <span class="home-focus-icon focus-icon-purple" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="home-focus-number">01</span>
+                </div>
+
+                <h3>Backend Development</h3>
+
+                <p>
+                    Building application logic, handling requests,
+                    implementing authentication, and developing
+                    features with Django.
+                </p>
+
+                <span class="home-card-accent" aria-hidden="true"></span>
+            </article>
+
+            <article class="home-focus-card">
+                <div class="home-focus-card-top">
+                    <span class="home-focus-icon focus-icon-blue" aria-hidden="true">◈</span>
+                    <span class="home-focus-number">02</span>
+                </div>
+
+                <h3>Data &amp; Databases</h3>
+
+                <p>
+                    Exploring models, relationships, queries,
+                    and data persistence to understand how
+                    applications manage information.
+                </p>
+
+                <span class="home-card-accent" aria-hidden="true"></span>
+            </article>
+
+            <article class="home-focus-card">
+                <div class="home-focus-card-top">
+                    <span class="home-focus-icon focus-icon-pink" aria-hidden="true">✳</span>
+                    <span class="home-focus-number">03</span>
+                </div>
+
+                <h3>Learning by Building</h3>
+
+                <p>
+                    Turning concepts into practical projects,
+                    solving implementation problems, and
+                    improving with every iteration.
+                </p>
+
+                <span class="home-card-accent" aria-hidden="true"></span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Featured projects -->
+    <section class="home-projects section-container">
+
+        <div class="home-section-heading">
+            <div>
+                <span class="home-eyebrow">SELECTED WORK</span>
+                <h2>Projects that bring ideas to life.</h2>
+            </div>
+
+            <a href="{% url 'projects' %}" class="home-text-link">
+                View all projects <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+
+        <div class="home-project-grid">
+
+            <article class="home-project-card">
+                <div class="home-project-visual project-visual-quickbite">
+                    <span class="project-visual-label">01 / WEB DEVELOPMENT</span>
+                    <div class="project-visual-symbol" aria-hidden="true">QB<span>.</span></div>
+                    <div class="project-visual-orbit" aria-hidden="true"></div>
+                </div>
+
+                <div class="home-project-content">
+                    <div class="home-project-meta">
+                        <span>DJANGO APPLICATION</span>
+                        <span class="project-status-dot" aria-hidden="true"></span>
+                    </div>
+
+                    <h3>QuickBite</h3>
+
+                    <p>
+                        A restaurant management application exploring
+                        menus, cart functionality, orders, authentication,
+                        and checkout workflows.
+                    </p>
+
+                    <div class="home-project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="home-project-card">
+                <div class="home-project-visual project-visual-gymlitics">
+                    <span class="project-visual-label">02 / COMPUTER VISION</span>
+                    <div class="project-visual-symbol" aria-hidden="true">GY<span>.</span></div>
+                    <div class="project-visual-orbit" aria-hidden="true"></div>
+                </div>
+
+                <div class="home-project-content">
+                    <div class="home-project-meta">
+                        <span>EXERCISE ANALYSIS</span>
+                        <span class="project-status-dot" aria-hidden="true"></span>
+                    </div>
+
+                    <h3>GymLytics</h3>
+
+                    <p>
+                        An exercise analysis project combining YOLOv8
+                        classification and MediaPipe Pose to explore
+                        exercise recognition and posture.
+                    </p>
+
+                    <div class="home-project-tags">
+                        <span>YOLOv8</span>
+                        <span>MediaPipe</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="home-project-card">
+                <div class="home-project-visual project-visual-tweet">
+                    <span class="project-visual-label">03 / WEB DEVELOPMENT</span>
+                    <div class="project-visual-symbol" aria-hidden="true">DT<span>.</span></div>
+                    <div class="project-visual-orbit" aria-hidden="true"></div>
+                </div>
+
+                <div class="home-project-content">
+                    <div class="home-project-meta">
+                        <span>DJANGO WEB APP</span>
+                        <span class="project-status-dot" aria-hidden="true"></span>
+                    </div>
+
+                    <h3>Django Tweet</h3>
+
+                    <p>
+                        A Django web application project built to
+                        practice backend functionality and the
+                        fundamentals of web application development.
+                    </p>
+
+                    <div class="home-project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Templates</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="home-projects-footer">
+            <p>Want to explore how these projects work?</p>
+            <a href="{% url 'projects' %}" class="home-button home-button-secondary">
+                Discover my projects <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Closing call to action -->
+    <section class="home-cta section-container">
+        <div class="home-cta-inner">
+            <span class="home-eyebrow">LET'S CONNECT</span>
+
+            <h2>
+                Have an idea?
+                <span class="home-gradient-text">Let's make it real.</span>
+            </h2>
+
+            <p>
+                I'm always interested in learning, building useful
+                things, and exploring new challenges.
+            </p>
+
+            <a href="{% url 'contact' %}" class="home-button home-button-primary">
+                Get in touch <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+{% endblock %}

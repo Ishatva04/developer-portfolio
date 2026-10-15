@@ -1,0 +1,364 @@
+
+/* ========================================
+   CONTACT PAGE — CLEAN SINGLE COLUMN
+======================================== */
+
+.contact-page {
+    position: relative;
+    min-height: 70vh;
+    padding: 56px 24px 80px;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: 50%;
+    width: 700px;
+    height: 500px;
+    transform: translateX(-50%);
+    background: radial-gradient(
+        ellipse,
+        rgba(119, 92, 255, 0.08),
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+.contact-content {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    min-width: 0;
+}
+
+/* Introduction */
+
+.contact-hero {
+    margin-bottom: 30px;
+}
+
+.section-eyebrow {
+    margin: 0 0 18px;
+    color: #aaa0ff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.2px;
+    line-height: 1.5;
+}
+
+.contact-hero h1 {
+    max-width: 620px;
+    margin: 0;
+    color: #f4f2ff;
+    font-size: clamp(36px, 4.5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -1.8px;
+    line-height: 1.16;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+.contact-hero h1 span {
+    display: inline;
+    color: #9d8bff;
+    background: linear-gradient(
+        100deg,
+        #a58aff,
+        #687bff 55%,
+        #d394ff
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-description {
+    max-width: 540px;
+    margin: 18px 0 0;
+    color: #aaaabd;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* Contact cards */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.contact-link-card {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 84px;
+    padding: 15px 17px;
+
+    color: #f1efff;
+    text-decoration: none;
+
+    background: rgba(17, 17, 34, 0.94);
+    border: 1px solid #27263f;
+    border-radius: 15px;
+
+    transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        background 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.contact-link-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(151, 126, 255, 0.65);
+    background: #15142a;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.contact-link-card:focus-visible {
+    outline: 2px solid #a18aff;
+    outline-offset: 4px;
+}
+
+/* Icons */
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 13px;
+
+    font-size: 19px;
+    font-weight: 800;
+
+    transition: transform 0.22s ease;
+}
+
+.contact-link-card:hover .contact-icon {
+    transform: scale(1.04);
+}
+
+.email-icon {
+    color: #c4aaff;
+    background: rgba(147, 104, 255, 0.13);
+}
+
+.linkedin-icon {
+    color: #92b8ff;
+    background: rgba(66, 133, 244, 0.12);
+}
+
+.github-icon {
+    color: #e1def5;
+    background: rgba(170, 165, 200, 0.12);
+    font-size: 14px;
+}
+
+.resume-icon {
+    color: #111126;
+    background: linear-gradient(135deg, #ad91ff, #6b7dff);
+    border-color: transparent;
+}
+
+/* Text inside cards */
+
+.contact-link-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.contact-link-label {
+    color: #8888a7;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.45px;
+    line-height: 1.5;
+}
+
+.contact-link-title {
+    color: #f0efff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.contact-link-description {
+    color: #aaaabe;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.contact-arrow {
+    flex: 0 0 auto;
+    margin-left: 8px;
+    color: #b6a0ff;
+    font-size: 21px;
+    line-height: 1;
+    transition:
+        transform 0.22s ease,
+        color 0.22s ease;
+}
+
+.contact-link-card:hover .contact-arrow {
+    color: #d1baff;
+    transform: translate(2px, -2px);
+}
+
+/* Resume card */
+
+.resume-card {
+    min-height: 90px;
+    margin-top: 5px;
+    background: linear-gradient(
+        115deg,
+        rgba(25, 22, 52, 0.98),
+        rgba(17, 20, 48, 0.98)
+    );
+    border-color: rgba(137, 111, 255, 0.43);
+}
+
+.resume-card:hover {
+    border-color: #927dff;
+    background: linear-gradient(
+        115deg,
+        #231d48,
+        #171c3f
+    );
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .contact-page {
+        min-height: auto;
+        padding: 44px 22px 60px;
+    }
+
+    .contact-content,
+    .contact-info {
+        max-width: 600px;
+    }
+
+    .contact-hero h1 {
+        font-size: clamp(34px, 6vw, 43px);
+        letter-spacing: -1.4px;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 34px 16px 48px;
+    }
+
+    .section-eyebrow {
+        margin-bottom: 16px;
+        font-size: 11px;
+    }
+
+    .contact-hero h1 {
+        font-size: 34px;
+        letter-spacing: -1.2px;
+        line-height: 1.2;
+    }
+
+    .contact-description {
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .contact-hero {
+        margin-bottom: 24px;
+    }
+
+    .contact-links {
+        gap: 10px;
+    }
+
+    .contact-link-card {
+        min-height: 76px;
+        padding: 12px;
+        gap: 11px;
+        border-radius: 13px;
+    }
+
+    .contact-icon {
+        flex-basis: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 11px;
+        font-size: 17px;
+    }
+
+    .contact-link-label {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .contact-link-title {
+        font-size: 13px;
+    }
+
+    .contact-link-description {
+        font-size: 11px;
+    }
+
+    .contact-arrow {
+        margin-left: 2px;
+        font-size: 19px;
+    }
+
+    .resume-card {
+        margin-top: 4px;
+    }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-link-card,
+    .contact-icon,
+    .contact-arrow {
+        transition: none;
+    }
+
+    .contact-link-card:hover,
+    .contact-link-card:hover .contact-icon,
+    .contact-link-card:hover .contact-arrow {
+        transform: none;
+    }
+}

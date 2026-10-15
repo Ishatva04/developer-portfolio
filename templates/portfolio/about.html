@@ -1,0 +1,213 @@
+{% extends 'base.html' %} {% load static %} {% block title %}About Me | Ishatva
+Gupta{% endblock %} {% block meta_description %} Learn about Ishatva Gupta, a
+Python and Django developer building practical web applications and backend
+systems. {% endblock %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/pages/about.css' %}" />
+{% endblock %} {% block content %}
+<main class="about-page">
+  <!-- Ambient background effects -->
+  <div class="about-glow about-glow-one" aria-hidden="true"></div>
+  <div class="about-glow about-glow-two" aria-hidden="true"></div>
+
+  <!-- Introduction -->
+  <section class="about-hero section-container">
+    <div class="about-intro">
+      <div class="about-eyebrow">
+        <span class="status-dot"></span>
+        A LITTLE ABOUT ME
+      </div>
+
+      <h1 class="about-title">
+        Turning ideas into
+        <span class="gradient-text">working applications.</span>
+      </h1>
+
+      <p class="about-description">
+        I'm Ishatva Gupta, a Python and Django developer interested in building
+        reliable web applications, thoughtful user experiences, and
+        database-driven systems.
+      </p>
+
+      <p class="about-description about-description-secondary">
+        Through QuickBite, I've explored Django models, authentication, cart
+        management, checkout workflows, and order tracking. I also work on
+        computer vision projects, including GymLytics, which uses YOLOv8 and
+        MediaPipe for exercise analysis.
+      </p>
+
+      <div class="about-actions">
+        <a
+          href="{% url 'projects' %}"
+          class="about-button about-button-primary"
+        >
+          Explore my projects
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          href="{% url 'contact' %}"
+          class="about-button about-button-secondary"
+        >
+          Let's connect
+        </a>
+      </div>
+
+      <div class="about-focus">
+        <span class="focus-line"></span>
+        <span>Focused on backend development and continuous learning</span>
+      </div>
+    </div>
+
+    <!-- Developer identity card -->
+    <aside class="developer-card" aria-label="Developer profile">
+      <div class="card-topline">
+        <span class="card-label">DEVELOPER PROFILE</span>
+        <span class="card-indicator"></span>
+      </div>
+
+      
+<div class="developer-avatar" aria-hidden="true">
+    <span class="avatar-code">&lt;/&gt;</span>
+
+    <span class="avatar-spark avatar-spark-one">✦</span>
+    <span class="avatar-spark avatar-spark-two">+</span>
+
+    <div class="avatar-orbit avatar-orbit-one"></div>
+    <div class="avatar-orbit avatar-orbit-two"></div>
+</div>
+
+      <h2 class="developer-name">Ishatva Gupta</h2>
+      <p class="developer-role">Python · Django · Backend</p>
+
+      <div class="card-divider"></div>
+
+      <div class="developer-detail">
+        <span class="detail-icon" aria-hidden="true">⌘</span>
+        <div>
+          <span class="detail-label">CURRENT FOCUS</span>
+          <span class="detail-value">Building web applications</span>
+        </div>
+      </div>
+
+      <div class="developer-detail">
+        <span class="detail-icon" aria-hidden="true">{ }</span>
+        <div>
+          <span class="detail-label">CORE STACK</span>
+          <span class="detail-value">Python &amp; Django</span>
+        </div>
+      </div>
+
+      <div class="developer-card-decoration" aria-hidden="true"></div>
+    </aside>
+  </section>
+
+  <!-- Areas of interest -->
+  <section class="about-highlights section-container">
+    <div class="highlights-heading">
+      <div>
+        <span class="about-eyebrow">WHAT I WORK ON</span>
+        <h2 class="highlights-title">
+          Turning concepts into
+          <span class="gradient-text">real solutions.</span>
+        </h2>
+      </div>
+
+      <p class="highlights-description">
+        The areas I'm exploring and strengthening through hands-on projects.
+      </p>
+    </div>
+
+    <div class="highlights-grid">
+      <article class="highlight-card">
+        <div class="highlight-card-top">
+          <div class="highlight-icon icon-purple" aria-hidden="true">
+            &lt;/&gt;
+          </div>
+          <span class="highlight-number">01</span>
+        </div>
+
+        <h3>Backend Development</h3>
+
+        <p>
+          Building application logic, handling requests, implementing
+          authentication, and developing features with Django.
+        </p>
+
+        <div class="highlight-tags">
+          <span>Python</span>
+          <span>Django</span>
+          <span>Web apps</span>
+        </div>
+
+        <div class="highlight-card-glow" aria-hidden="true"></div>
+      </article>
+
+      <article class="highlight-card">
+        <div class="highlight-card-top">
+          <div class="highlight-icon icon-blue" aria-hidden="true">◈</div>
+          <span class="highlight-number">02</span>
+        </div>
+
+        <h3>Database Management</h3>
+
+        <p>
+          Working with models, relationships, queries, and persistent
+          application data to build structured backend systems.
+        </p>
+
+        <div class="highlight-tags">
+          <span>ORM</span>
+          <span>SQL</span>
+          <span>Data models</span>
+        </div>
+
+        <div class="highlight-card-glow" aria-hidden="true"></div>
+      </article>
+
+      <article class="highlight-card">
+        <div class="highlight-card-top">
+          <div class="highlight-icon icon-pink" aria-hidden="true">✳</div>
+          <span class="highlight-number">03</span>
+        </div>
+
+        <h3>Practical Projects</h3>
+
+        <p>
+          Applying development concepts to projects such as QuickBite and
+          GymLytics while learning through implementation and iteration.
+        </p>
+
+        <div class="highlight-tags">
+          <span>QuickBite</span>
+          <span>GymLytics</span>
+          <span>Computer vision</span>
+        </div>
+
+        <div class="highlight-card-glow" aria-hidden="true"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Closing call to action -->
+  <section class="about-cta section-container">
+    <div class="about-cta-inner">
+      <span class="about-eyebrow">HAVE SOMETHING IN MIND?</span>
+
+      <h2>
+        Let's build something
+        <span class="gradient-text">meaningful.</span>
+      </h2>
+
+      <p>
+        I'm interested in learning, solving problems, and building useful
+        applications.
+      </p>
+
+      <a href="{% url 'contact' %}" class="about-button about-button-primary">
+        Get in touch
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+{% endblock %}

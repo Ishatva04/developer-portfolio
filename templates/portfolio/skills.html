@@ -1,0 +1,249 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Skills | Ishatva Gupta{% endblock %}
+
+{% block meta_description %}
+Explore Ishatva Gupta's technical skills in Python, Django, web development, and computer vision.
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/pages/skill.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="skills-page">
+
+    <!-- Hero Section -->
+    <section class="skills-hero">
+        <div class="skills-glow skills-glow-one"></div>
+        <div class="skills-glow skills-glow-two"></div>
+
+        <div class="skills-hero-content">
+            <span class="section-label">
+                <span class="label-dot"></span>
+                WHAT I WORK WITH
+            </span>
+
+            <h1>
+                My Technical
+                <span>Skills.</span>
+            </h1>
+
+            <p>
+                Technologies and tools I use to build web applications,
+                work with backend systems, and explore computer vision.
+            </p>
+
+            <!-- Profile Links -->
+            <div class="profile-links">
+
+                <!-- LeetCode -->
+                <a
+                    href="https://leetcode.com/u/Ishatvagupta/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="profile-link leetcode-link"
+                    aria-label="Visit my LeetCode profile"
+                >
+                    <span class="profile-icon leetcode-icon">LC</span>
+
+                    <span class="profile-link-text">
+                        <strong>LeetCode</strong>
+                        <small>Problem solving</small>
+                    </span>
+
+                    <span class="link-arrow">↗</span>
+                </a>
+
+                <!-- GitHub -->
+                <a
+                    href="https://github.com/Ishatva04"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="profile-link github-link"
+                    aria-label="Visit my GitHub profile"
+                >
+                    <span class="profile-icon github-icon">GH</span>
+
+                    <span class="profile-link-text">
+                        <strong>GitHub</strong>
+                        <small>Explore my projects</small>
+                    </span>
+
+                    <span class="link-arrow">↗</span>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Decorative Illustration -->
+        <div class="hero-decoration" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="orbit-center">
+                <span>&lt;/&gt;</span>
+            </div>
+
+            <span class="floating-symbol symbol-one">{ }</span>
+            <span class="floating-symbol symbol-two">01</span>
+            <span class="floating-symbol symbol-three">;</span>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="skills-content">
+        <div class="skills-heading">
+            <div>
+                <span class="section-label">MY TOOLKIT</span>
+                <h2>Technologies I <span>use.</span></h2>
+            </div>
+
+            <p>
+                A collection of technologies connected to my development
+                and computer vision projects.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Backend Development -->
+            <article class="skill-card backend-card">
+                <div class="skill-card-top">
+                    <div class="skill-icon purple-icon">
+                        <span>Py</span>
+                    </div>
+                    <span class="card-number">01</span>
+                </div>
+
+                <h3>Backend Development</h3>
+
+                <p>
+                    Building application logic, handling requests,
+                    and managing data with Django.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Django ORM</span>
+                    <span>Authentication</span>
+                </div>
+            </article>
+
+            <!-- Database Management -->
+            <article class="skill-card database-card">
+                <div class="skill-card-top">
+                    <div class="skill-icon blue-icon">
+                        <span>DB</span>
+                    </div>
+                    <span class="card-number">02</span>
+                </div>
+
+                <h3>Database Management</h3>
+
+                <p>
+                    Working with structured data, Django models,
+                    database relationships, and queries.
+                </p>
+
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>SQLite</span>
+                    <span>Database Models</span>
+                    <span>Migrations</span>
+                </div>
+            </article>
+
+            <!-- Frontend Development -->
+            <article class="skill-card frontend-card">
+                <div class="skill-card-top">
+                    <div class="skill-icon pink-icon">
+                        <span>UI</span>
+                    </div>
+                    <span class="card-number">03</span>
+                </div>
+
+                <h3>Frontend Development</h3>
+
+                <p>
+                    Creating responsive interfaces and connecting
+                    Django templates with frontend styling.
+                </p>
+
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Django Templates</span>
+                </div>
+            </article>
+
+            <!-- Computer Vision -->
+            <article class="skill-card vision-card">
+                <div class="skill-card-top">
+                    <div class="skill-icon green-icon">
+                        <span>AI</span>
+                    </div>
+                    <span class="card-number">04</span>
+                </div>
+
+                <h3>Computer Vision</h3>
+
+                <p>
+                    Exploring pose estimation, image processing,
+                    and exercise form analysis through GymLytics.
+                </p>
+
+                <div class="skill-tags">
+                    <span>YOLOv8</span>
+                    <span>MediaPipe</span>
+                    <span>OpenCV</span>
+                    <span>NumPy</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section class="learning-section">
+        <div class="learning-content">
+            <span class="section-label">ALWAYS IMPROVING</span>
+
+            <h2>
+                Learn it. Build it.
+                <span>Improve it.</span>
+            </h2>
+
+            <p>
+                I focus on strengthening my fundamentals by applying
+                concepts to practical projects and solving problems.
+            </p>
+        </div>
+
+        <div class="learning-links">
+            <a
+                href="https://leetcode.com/u/Ishatvagupta/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="learning-link"
+            >
+                LeetCode <span>↗</span>
+            </a>
+
+            <a
+                href="https://github.com/Ishatva04"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="learning-link"
+            >
+                GitHub <span>↗</span>
+            </a>
+        </div>
+    </section>
+
+</div>
+{% endblock %}

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}Ishatva Gupta | Python & Django Developer{% endblock %}
+    </title>
+
+    <meta
+        name="description"
+        content="{% block meta_description %}Portfolio of Ishatva Gupta, Python and Django developer.{% endblock %}"
+    >
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/main.js' %}" defer></script>
+
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+
+            <a class="logo" href="{% url 'home' %}">
+                Ishatva<span>.</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+
+                <a
+                    href="{% url 'home' %}"
+                    class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+                    {% if request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}
+                >
+                    Home
+                </a>
+
+                <a
+                    href="{% url 'about' %}"
+                    class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"
+                    {% if request.resolver_match.url_name == 'about' %}aria-current="page"{% endif %}
+                >
+                    About
+                </a>
+
+                <a
+                    href="{% url 'skills' %}"
+                    class="{% if request.resolver_match.url_name == 'skills' %}active{% endif %}"
+                    {% if request.resolver_match.url_name == 'skills' %}aria-current="page"{% endif %}
+                >
+                    Skills
+                </a>
+
+                <a
+                    href="{% url 'projects' %}"
+                    class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}"
+                    {% if request.resolver_match.url_name == 'projects' %}aria-current="page"{% endif %}
+                >
+                    Projects
+                </a>
+
+                <a
+                    href="{% url 'contact' %}"
+                    class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
+                    {% if request.resolver_match.url_name == 'contact' %}aria-current="page"{% endif %}
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+            <a class="nav-cta" href="{% url 'contact' %}">
+                Let's Connect <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="current-year"></span> Ishatva Gupta</p>
+
+        <a href="{% url 'home' %}#home">
+            Back to top ↑
+        </a>
+    </footer>
+
+    {% block extra_js %}{% endblock %}
+
+</body>
+</html>
